@@ -3,3 +3,10 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+#root {
+  background-image: url(https://tamybl.github.io/swapi-app/assets/img/sw-bg1.png);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
