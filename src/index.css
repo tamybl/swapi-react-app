@@ -7,6 +7,6 @@ body {
 #root {
   background-image: url(https://tamybl.github.io/swapi-app/assets/img/sw-bg1.png);
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 }

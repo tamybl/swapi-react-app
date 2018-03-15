@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
 //import PropTypes from 'prop-types';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 // Api Swapi
-const categories = [ 'Planets', 'Spaceships', 'Vehicles', 'People', 'Films', 'Species' ];
+const categories = [ 'Films', 'Planets', 'Spaceships', 'Vehicles', 'People', 'Species' ];
 
-// Api OMDB
-//const movies = [ 'title1', 'title2', 'title3', 'title4' ];
 
 class Swapi extends Component {
   render() {
       let listCategories = categories.map((name, index) => {
-        return <li key={index} className={name} onClick={getDataCategories}>{name}</li>
+        return <Col xs={12} sm={6} md={4} key={index} className={`categories ${name}`}  alt={name} onClick={getDataCategories}><span className="title">{name}</span></Col>
       });
     return (
-      <ul>
+      <Row>
+
         {listCategories}
-      </ul>);
+      </Row>);
   }
 }
 
-const getDataCategories = ({name}) => {
-  console.log('Hice click en' + {name});
+const getDataCategories = () => {
+  console.log('Hice click');
 }
 
 export default Swapi;
