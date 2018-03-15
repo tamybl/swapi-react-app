@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
 //import logo from './logo.svg';
 import Header from './components/Header/Header';
-import Swapi from './components/Swapi';
+import Swapi from './components/Content';
 import './App.css';
 
 

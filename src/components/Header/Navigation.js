@@ -5,7 +5,7 @@ const Navigation = (props) => (
   <Navbar inverse collapseOnSelect>
     <Navbar.Header>
           <Navbar.Brand>
-            <a href="#brand" className="logo"><img src={props.imageBrand} title={props.title} className="img-responsive"/></a>
+            <a href="#" className="logo"><img src={props.imageBrand} title={props.title} className="img-responsive"/></a>
           </Navbar.Brand>
         <Navbar.Toggle />
      </Navbar.Header>
@@ -24,10 +24,10 @@ const Navigation = (props) => (
       </Nav>
       <Nav pullRight>
         <NavItem eventKey={1} href="#">
-          {props.linkright1}
+          Registrarse
         </NavItem>
         <NavItem eventKey={2} href="#">
-          {props.linkRight2}
+          Iniciar Sesión
         </NavItem>
       </Nav>
     </Navbar.Collapse>
